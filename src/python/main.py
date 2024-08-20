@@ -1,5 +1,3 @@
-# src/python/main.py
-
 import sys
 import os
 
@@ -12,29 +10,10 @@ print("Python path:")
 for path in sys.path:
     print(path)
 
-try:
-    from src.python.depth_simulation import DepthSimulator
-    print("Successfully imported DepthSimulator")
-except ImportError as e:
-    print(f"Failed to import DepthSimulator: {e}")
-
-try:
-    from src.python.alert_system import AlertSystem
-    print("Successfully imported AlertSystem")
-except ImportError as e:
-    print(f"Failed to import AlertSystem: {e}")
-
-try:
-    from object_detection import detect_objects
-    print("Successfully imported detect_objects")
-except ImportError as e:
-    print(f"Failed to import detect_objects: {e}")
-
-try:
-    from visualization import visualize_depth_map_and_objects, visualize_depth_map_3d
-    print("Successfully imported visualization functions")
-except ImportError as e:
-    print(f"Failed to import visualization functions: {e}")
+from src.python.depth_simulation import DepthSimulator
+from src.python.alert_system import AlertSystem
+from object_detection import detect_objects
+from src.python.visualization import visualize_depth_map_and_objects, visualize_depth_map_3d
 
 import time
 import numpy as np
