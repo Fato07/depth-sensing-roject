@@ -7,14 +7,16 @@ This project simulates a depth-sensing application using a combination of Python
 - Python 3.6+
 - C++ compiler with C++11 support
 - CMake 3.4+
+- NumPy
+- Matplotlib
 - pybind11
 
 ## Setup
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/depth-sensing-simulation.git
-   cd depth-sensing-simulation
+   git clone https://github.com/Fato07/depth-sensing-roject.git
+   cd depth-sensing-roject
    ```
 
 2. Create and activate a virtual environment:
@@ -25,19 +27,19 @@ This project simulates a depth-sensing application using a combination of Python
 
 3. Install the required packages:
    ```
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 4. Build the C++ extension:
    ```
-   python setup.py build_ext --inplace
+   python3 setup.py build_ext --inplace
    ```
 
 ## Usage
 
 Run the main script:
 ```
-python src/python/main.py
+python3 src/python/main.py
 ```
 
 This will simulate a depth map, detect objects, and print any alerts for objects within the critical distance.
@@ -62,9 +64,3 @@ pytest tests/
 - `tests/`: Contains test cases
 - `setup.py`: Build script for the C++ extension
 - `CMakeLists.txt`: CMake configuration file
-
-## Assumptions and Design Decisions
-
-1. The depth map is simulated using random values, which may not accurately represent real-world depth sensing data.
-2. Object detection is performed using a simple thresholding method, which may not be as robust as more advanced computer vision techniques.
-3. The alert system
