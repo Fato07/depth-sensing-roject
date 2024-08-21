@@ -15,8 +15,8 @@ This project simulates a depth-sensing application using a combination of Python
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Fato07/depth-sensing-roject.git
-   cd depth-sensing-roject
+   git clone https://github.com/Fato07/depth-sensing-simulation.git
+   cd depth-sensing-simulation
    ```
 
 2. Create and activate a virtual environment:
